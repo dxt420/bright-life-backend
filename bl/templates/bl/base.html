@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BrightLife</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/bl/assets/img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/static/bl/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Fonts  -->
+    <!-- <link rel="stylesheet" href="/static/bl/assets/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="/static/bl/assets/css/simple-line-icons.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="/static/bl/assets/css/animate.css">
+    <!-- Daterange Picker -->
+    <link rel="stylesheet" href="/static/bl/assets/plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- Calendar demo -->
+    <link rel="stylesheet" href="/static/bl/assets/css/clndr.css">
+    <!-- Switchery -->
+    <link rel="stylesheet" href="/static/bl/assets/plugins/switchery/switchery.min.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="/static/bl/assets/css/main.css">
+    <!-- Feature detection -->
+    <script src="/static/bl/assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/static/bl/assets/js/vendor/html5shiv.js"></script>
+    <script src="/static/bl/assets/js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section id="main-wrapper" class="theme-dark-full">
+     
+        <!--sidebar left start-->
+        <aside class="sidebar sidebar-left">
+            <div class="sidebar-profile">
+                <div class="avatar">
+                    <img class="img-circle profile-image" src="/static/bl/assets/img/profile-lg.jpg" alt="profile">
+                    <i class="on border-dark animated bounceIn"></i>
+                </div>
+                <div class="profile-body dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><h4>Chris Stevens <span class="caret"></span></h4></a>
+                    <small class="title">Marketing Director</small>
+                    <ul class="dropdown-menu animated fadeInRight" role="menu">
+                       
+                     
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-sign-out"></i>
+                                </span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+               
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href={% url 'bl:home' %} title="Overview">
+                            <i class="fa  fa-fw fa-tachometer"></i> Overview
+                        </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Sales Map">
+                                <i class="fa  fa-fw fa-tachometer"></i> Sales Map
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Performance Reports">
+                                <i class="fa  fa-fw fa-tachometer"></i> Performance Reports
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Notifications">
+                                <i class="fa  fa-fw fa-tachometer"></i> Notifications
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Messages">
+                                <i class="fa  fa-fw fa-tachometer"></i> Messages
+                            </a>
+                    </li>
+
+                    <li class="p">
+                            <a href={% url 'bl:home' %} title="Surveys">
+                                <i class="fa  fa-fw fa-tachometer"></i> Surveys
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Agents">
+                                <i class="fa  fa-fw fa-tachometer"></i> Agents
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Iventory">
+                                <i class="fa  fa-fw fa-tachometer"></i> Iventory
+                            </a>
+                    </li>
+
+                    <li class="">
+                            <a href={% url 'bl:home' %} title="Settings">
+                                <i class="fa  fa-fw fa-tachometer"></i> Settings
+                            </a>
+                    </li>
+                  
+                </ul>
+            </nav>
+          
+        </aside>
+        <!--sidebar left end-->
+       
+
+
+
+
+        {% block content %}
+
+
+
+        {% endblock content %}
+
+
+
+    </section>
+ 
+    <!--Global JS-->
+    <script src="/static/bl/assets/js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="/static/bl/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/bl/assets/plugins/navgoco/jquery.navgoco.min.js"></script>
+    <script src="/static/bl/assets/plugins/pace/pace.min.js"></script>
+    <script src="/static/bl/assets/plugins/fullscreen/jquery.fullscreen-min.js"></script>
+    <script src="/static/bl/assets/js/src/app.js"></script>
+    <!--Page Level JS-->
+    <script src="/static/bl/assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="/static/bl/assets/plugins/weather/js/skycons.js"></script>
+    <script src="/static/bl/assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="/static/bl/assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- ChartJS  -->
+    <script src="/static/bl/assets/plugins/chartjs/Chart.min.js"></script>
+    <!-- Morris  -->
+    <script src="/static/bl/assets/plugins/morris/js/morris.min.js"></script>
+    <script src="/static/bl/assets/plugins/morris/js/raphael.2.1.0.min.js"></script>
+    <!-- Vector Map  -->
+    <script src="/static/bl/assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="/static/bl/assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- Gauge  -->
+    <script src="/static/bl/assets/plugins/gauge/gauge.min.js"></script>
+    <script src="/static/bl/assets/plugins/gauge/gauge-demo.js"></script>
+    <!-- Calendar  -->
+    <script src="/static/bl/assets/plugins/calendar/clndr.js"></script>
+    <script src="/static/bl/assets/plugins/calendar/clndr-demo.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <!-- Switch -->
+    <script src="/static/bl/assets/plugins/switchery/switchery.min.js"></script>
+    <!--Load these page level functions-->
+    <script>
+    $(document).ready(function() {
+        app.dateRangePicker();
+        app.chartJs();
+        app.weather();
+        app.spinStart();
+        app.spinStop();
+    });
+    </script>
+</body>
+
+</html>
