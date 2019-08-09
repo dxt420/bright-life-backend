@@ -30,9 +30,15 @@ class Applicant(models.Model):
         return self.first_name
 
 
-# class Identity(models.Model):
-#     user = models.ForeignKey(Applicant, on_delete=models.CASCADE)
-#     identity_type = models.CharField(max_length=50)
+class Identity(models.Model):
+        # user = models.ForeignKey(Applicant, on_delete=models.CASCADE)
+    user_id = models.CharField(max_length=50)
+    nid_number = models.CharField(max_length=50,blank=True)
+    passport_number = models.CharField(max_length=50,blank=True)
+    nid_front = models.FileField(upload_to='media/files/',default='aa',blank=True)
+    nid_back = models.FileField(upload_to='media/files/',default='aa',blank=True)
+    passport_copy = models.FileField(upload_to='media/files/',default='aa',blank=True)
+
 
 
 

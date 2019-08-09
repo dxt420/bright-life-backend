@@ -40,3 +40,10 @@ class ApplicantDetailView(generics.RetrieveUpdateDestroyAPIView):
     """
     queryset = Applicant.objects.all()
     serializer_class = ApplicantSerializer
+
+
+class IDCreateView(generics.ListCreateAPIView):
+   
+    queryset = Identity.objects.all()
+    serializer_class = IdentitySerializer
+  
