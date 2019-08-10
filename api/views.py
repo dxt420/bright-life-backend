@@ -46,4 +46,11 @@ class IDCreateView(generics.ListCreateAPIView):
    
     queryset = Identity.objects.all()
     serializer_class = IdentitySerializer
+
+class IDDetailView(generics.RetrieveUpdateDestroyAPIView):
+
+    queryset = Identity.objects.all()
+    serializer_class = IdentitySerializer
+
+
   

@@ -12,13 +12,13 @@ class MyGenericModel(models.Model):
 
 class Applicant(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    title = models.CharField(max_length=50)
-    first_name = models.CharField(max_length=50)
+    title = models.CharField(max_length=50,blank=True)
+    first_name = models.CharField(max_length=50,blank=True)
     middle_name = models.CharField(max_length=50,blank=True)
-    last_name = models.CharField(max_length=50)
-    email = models.CharField(max_length=50)
-    dob = models.CharField(max_length=50)
-    phone = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50,blank=True)
+    email = models.CharField(max_length=50,blank=True)
+    dob = models.CharField(max_length=50,blank=True)
+    phone = models.CharField(max_length=50,blank=True)
     other_phone = models.CharField(max_length=50,blank=True)
     status = models.CharField(max_length=50,blank=True)
     applied_at = models.CharField(max_length=50,blank=True)
@@ -32,7 +32,7 @@ class Applicant(models.Model):
 
 class Identity(models.Model):
         # user = models.ForeignKey(Applicant, on_delete=models.CASCADE)
-    user_id = models.CharField(max_length=50)
+    user_id = models.CharField(max_length=50,blank=True)
     nid_number = models.CharField(max_length=50,blank=True)
     passport_number = models.CharField(max_length=50,blank=True)
     nid_front = models.FileField(upload_to='media/files/',default='aa',blank=True)

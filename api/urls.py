@@ -7,5 +7,6 @@ urlpatterns = [
     path('applicants/', ApplicantListCreateView.as_view(), name='applicants'),
     path('applicant/<uuid:pk>/',  ApplicantDetailView.as_view(), name='applicant_detail'),
     path('applicantIdentity/<uuid:pk>/',  IDCreateView.as_view(), name='identity_create'),
+     path('applicantIdentityDetail/<uuid:pk>/',  IDDetailView.as_view(), name='identity_detail'),
     path('', include(router.urls))
 ]
