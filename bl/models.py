@@ -21,10 +21,14 @@ class Applicant(models.Model):
     phone = models.CharField(max_length=50,blank=True)
     other_phone = models.CharField(max_length=50,blank=True)
     status = models.CharField(max_length=50,blank=True)
-    applied_at = models.CharField(max_length=50,blank=True)
-    applied_from = models.CharField(max_length=250,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     valid = models.BooleanField(default=True)
+    has_id = models.CharField(max_length=50,blank=True)
+    has_cv = models.CharField(max_length=50,blank=True)
+    has_rec = models.CharField(max_length=50,blank=True)
+    has_lc = models.CharField(max_length=50,blank=True)
+    has_academics = models.CharField(max_length=50,blank=True)
+ 
 
     def __str__(self):
         return self.first_name
